@@ -21,6 +21,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 20px;
     }
 
     p {
@@ -34,7 +35,8 @@
             color: themed('secondaryTextColor');
         }
 
-        @include md {
+        @include sm {
+            font-size: 16px;
         }
     }
 

@@ -10,7 +10,7 @@
     text-align: center;
     margin-left: -($padding-left-desktop) - 10px;
     margin-right: -($padding-right-desktop);
-    margin-top: $margin-desktop;
+    margin-top: $margin-desktop + 20px;
     margin-bottom: $margin-desktop;
 
     @include sm {

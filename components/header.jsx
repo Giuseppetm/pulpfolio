@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <header className={"header"}>
-            <div class="container mx-auto">
+            <div className="container mx-auto">
                 <div className={"themes-list"}>
                     {themes.map((t,i) => {
                         return (

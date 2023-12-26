@@ -13,10 +13,10 @@
     }
 
     .title h1 {
-        font-size: clamp(42px, 6vw + 2.3rem, 156px);
+        font-size: clamp(56px, 6vw + 2.3rem, 156px);
         font-weight: 600;
         text-align: center;
-        line-height: calc(117px + 1vw);
+        line-height: calc(100px + 1vw);
 
         @include sm {
             text-align: left;
