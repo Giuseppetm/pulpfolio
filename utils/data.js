@@ -43,6 +43,49 @@ const themes = [
     }
 ];
 
+const movies = [
+    {
+        imgSrc: "gattaca.png"
+    },
+    {
+        imgSrc: "alien.png"
+    },
+    {
+        imgSrc: "matrix.png"
+    },
+    {
+        imgSrc: "royalTenenbaums.png"
+    },
+    {
+        imgSrc: "chungkingExpress.png"
+    },
+    {
+        imgSrc: "walterMitty.png"
+    },
+    {
+        imgSrc: "solaris.png"
+    },
+    {
+        imgSrc: "theFountain.png"
+    },
+    {
+        imgSrc: "moonriseKingdom.png"
+    },
+    {
+        imgSrc: "punchDrunkLove.png"
+    },
+    {
+        imgSrc: "amelie.png"
+    },
+    {
+        imgSrc: "parisTexas.png"
+    },
+    {
+        imgSrc: "bladeRunner2049.png"
+    }
+];
+
 export { 
-    themes 
+    themes,
+    movies
 };

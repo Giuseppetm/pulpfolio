@@ -28,9 +28,12 @@ b {
   font-weight: 600;
 }
 
+p {
+  font-size: clamp(24px, 5vw, 36px);
+}
+
 main {
   font-weight: 500;
-  padding-top: 146px;
   min-height: 100vh;
 
   @include themify($themes) {
@@ -42,6 +45,10 @@ main {
 .mf-cursor {
   @include themify($themes) {
     color: themed('accentColor');
+  }
+
+  @include sm {
+    display: none;
   }
 }
 

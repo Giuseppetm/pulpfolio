@@ -1,21 +1,63 @@
 @import '@/styles/variables.scss';
 @import '@/styles/themes.scss';
+@import '@/styles/responsive.scss';
 
 .hero {
     padding-left: $padding-left-desktop;
     padding-right: $padding-right-desktop;
     margin-bottom: 94px;
 
-    .title h1 {
-        font-size: 151px;
-        font-weight: 600;
+    @include md {
+        padding-left: $padding-left-mobile;
+        padding-right: $padding-right-mobile;
     }
 
-    .description {
-        display: flex;
-        flex-direction: column;
-        gap: 56px;
-        font-size: 36px;
-        margin-top: 56px;
+    .title h1 {
+        font-size: clamp(42px, 6vw + 2.3rem, 156px);
+        font-weight: 600;
+        text-align: center;
+        line-height: calc(117px + 1vw);
+
+        @include sm {
+            text-align: left;
+            line-height: calc(60px + 1vw);
+        }
+
+        .new-line {
+            display: none;
+
+            @include xxl {
+                display: block;
+            }
+        }
+    }
+
+    .subtitle {
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: $margin-desktop;
+
+            @include sm {
+                gap: $margin-mobile;
+            }
+        }
+
+        .work-details {
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: right;
+            line-height: 20px;
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .work-details-col {
+            @include xl {
+                display: none;
+            }
+        }
     }
 }

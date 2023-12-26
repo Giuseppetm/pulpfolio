@@ -14,27 +14,27 @@ const Header = () => {
 
     return (
         <header className={"header"}>
-            <div className={"themesList"}>
-                {themes.map((t,i) => {
-                    return (
-                        <div 
-                            style={{ backgroundColor: t.bgColor }}
-                            className={"theme"} 
-                            key={i} 
-                            onClick={() => onThemeSelect(t.name)} 
-                            data-cursor-text={t.label}
-                        >
-                            { t.imgSrc && <Image src={`/images/themes/${t.imgSrc}`} alt={t.name} width={40} height={40} /> }
-                        </div>
-                    );
-                })}
-            </div>
+            <div class="container mx-auto">
+                <div className={"themes-list"}>
+                    {themes.map((t,i) => {
+                        return (
+                            <div 
+                                style={{ backgroundColor: t.bgColor }}
+                                className={"theme"} 
+                                key={i} 
+                                onClick={() => onThemeSelect(t.name)} 
+                                data-cursor-text={t.label}
+                            >
+                                { t.imgSrc && <Image src={`/images/themes/${t.imgSrc}`} alt={t.name} width={40} height={40} /> }
+                            </div>
+                        );
+                    })}
+                </div>
 
-            <div>
-                <p>Frontend Developer</p>
+                <div>
+                    <p>Frontend Developer</p>
+                </div>
             </div>
-
-            <div />
         </header>
     );
 };

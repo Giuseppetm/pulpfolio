@@ -5,6 +5,11 @@
     padding-left: $padding-left-desktop;
     padding-right: $padding-right-desktop;
     margin-bottom: 69px;
+
+    @include md {
+        padding-left: $padding-left-mobile;
+        padding-right: $padding-right-mobile;
+    }
     
     h2 {
         font-weight: 600;

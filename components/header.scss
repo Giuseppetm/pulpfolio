@@ -1,50 +1,89 @@
 @import "@/styles/variables.scss";
 @import "@/styles/themes.scss";
+@import "@/styles/responsive.scss";
 
 .header {
-    position: absolute;
-    top: 54px;
-    left: $padding-left-desktop;
-    right: $padding-right-desktop;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    $padding-desktop: 54px;
+    $padding-mobile: 26px;
+    padding-top: $padding-desktop;
+    padding-bottom: $padding-desktop;
+    padding-left: $padding-left-desktop;
+    padding-right: $padding-right-desktop;
+
+    @include sm {
+        padding-left: $padding-left-mobile;
+        padding-right: $padding-right-mobile;
+        padding-top: $padding-mobile;
+        padding-bottom: $padding-mobile;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     p {
         font-weight: 600;
         font-size: 24px;
         text-transform: uppercase;
+        align-self: flex-start;
+        text-align: right;
 
         @include themify($themes) {
             color: themed('secondaryTextColor');
         }
-    }
-}
 
-.themesList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.theme {
-    width: 48px;
-    height: 48px;
-    rotate: -15deg;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    
-    @include themify($themes) {
-        box-shadow: themed('boxShadow');
-        border: 1px solid themed('secondaryTextLightColor');
+        @include md {
+        }
     }
 
-    img {
-        rotate: 15deg;
+    .themes-list {
+        $gap-desktop: 24px;
+        $gap-mobile: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $gap-desktop;
+        flex-grow: 1;
+
+        @include md {
+            gap: $gap-mobile;
+        }
+
+        .theme {
+            $size-desktop: 48px;
+            $size-mobile: 32px;
+            width: $size-desktop;
+            height: $size-desktop;
+            rotate: -12deg;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            transition: rotate 0.2s cubic-bezier(.17, .67, .84, .6),
+                opacity 0.2s cubic-bezier(.17, .67, .84, .6);
+
+            @include md {
+                width: $size-mobile;
+                height: $size-mobile;
+            }
+
+            &:hover {
+                rotate: -2deg;
+                opacity: 90%;
+            }
+
+            @include themify($themes) {
+                box-shadow: themed('boxShadow');
+                border: 1px solid themed('secondaryTextLightColor');
+            }
+
+            img {
+                rotate: 15deg;
+            }
+        }
     }
 }

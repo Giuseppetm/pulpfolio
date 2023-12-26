@@ -1,0 +1,38 @@
+@import '@/styles/responsive.scss';
+
+.images-marquee {
+    $height-desktop: 176px;
+    $height-mobile: 89px;
+
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    margin-left: -($padding-left-desktop) - 10px;
+    margin-right: -($padding-right-desktop);
+    margin-top: $margin-desktop;
+    margin-bottom: $margin-desktop;
+
+    @include sm {
+        margin-top: $margin-mobile;
+        margin-bottom: $margin-mobile;
+    }
+
+    @include md {
+        margin-left: -($padding-left-mobile) - 10px;
+        margin-right: -($padding-right-mobile);
+    }
+
+    .movie {
+        display: inline-block;
+        margin-right: 21px;
+    }
+
+    img {
+        height: $height-desktop;
+
+        @include sm {
+            height: $height-mobile;
+        } 
+    }
+}
