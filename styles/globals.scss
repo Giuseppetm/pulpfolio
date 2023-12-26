@@ -1,0 +1,29 @@
+@import "../node_modules/mouse-follower/src/scss/index.scss";
+@import "./themes.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: color 0.1s cubic-bezier(.17, .67, .84, .6), 
+              border-color 0.1s cubic-bezier(.17, .67, .84, .6), 
+              background-color 0.1s cubic-bezier(.17, .67, .84, .6);
+}
+
+main {
+  font-weight: 500;
+  margin-top: 146px;
+
+  @include themify($themes) {
+    color: themed('primaryTextColor');
+    background-color: themed('backgroundColor');
+  }
+}

@@ -1,0 +1,55 @@
+$themes: (
+    default: (
+        backgroundColor: #EEEEEE,
+        primaryTextColor: #222222,
+        secondaryTextColor: #888888,
+        secondaryTextLightColor: #B8B8B8,
+        accentColor: #EC4C08
+    ),
+    pulpFiction: (
+        backgroundColor: #fcf25d,
+        primaryTextColor: #222222,
+        secondaryTextColor: #888888,
+        secondaryTextLightColor: #B8B8B8,
+        accentColor: #fbb724
+    ),
+    bladeRunner: (
+        backgroundColor: rgb(13, 20, 163),
+        primaryTextColor: #e9e9e9,
+        secondaryTextColor: #c4c4c4,
+        secondaryTextLightColor: #c8c8c8,
+        accentColor: #e41f1f
+    ),
+    theMatrix: (
+
+    ),
+    2001: (
+
+    ),
+    tva: (
+
+    ),
+    her: (
+
+    )
+);
+
+@mixin themify( $themes: $themes ) {
+  @each $theme, $map in $themes {
+
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+};
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+};
