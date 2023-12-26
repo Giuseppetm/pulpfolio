@@ -1,0 +1,13 @@
+@import '@/styles/variables.scss';
+@import '@/styles/themes.scss';
+
+.projects {
+    padding-left: $padding-left-desktop;
+    padding-right: $padding-right-desktop;
+    margin-bottom: 69px;
+    
+    h2 {
+        font-weight: 600;
+        font-size: 52px;
+    }
+}

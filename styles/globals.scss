@@ -1,5 +1,11 @@
 @import "../node_modules/mouse-follower/src/scss/index.scss";
-@import "./themes.scss";
+@import "@/styles/themes.scss";
+@import "@/components/header.scss";
+@import "@/components/gattacaMarquee.scss";
+@import "@/components/imagesMarquee.scss";
+@import "@/components/header.scss";
+@import "@/sections/hero.scss";
+@import "@/sections/projects.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,17 +19,34 @@ body, html {
 * {
   margin: 0;
   padding: 0;
-  transition: color 0.1s cubic-bezier(.17, .67, .84, .6), 
-              border-color 0.1s cubic-bezier(.17, .67, .84, .6), 
-              background-color 0.1s cubic-bezier(.17, .67, .84, .6);
+  transition: color 0.2s cubic-bezier(.17, .67, .84, .6), 
+              border-color 0.2s cubic-bezier(.17, .67, .84, .6), 
+              background-color 0.2s cubic-bezier(.17, .67, .84, .6);
+}
+
+b {
+  font-weight: 600;
 }
 
 main {
   font-weight: 500;
-  margin-top: 146px;
+  padding-top: 146px;
+  min-height: 100vh;
 
   @include themify($themes) {
     color: themed('primaryTextColor');
     background-color: themed('backgroundColor');
+  }
+}
+
+.mf-cursor {
+  @include themify($themes) {
+    color: themed('accentColor');
+  }
+}
+
+.accent {
+  @include themify($themes) {
+    color: themed('accentColor');
   }
 }

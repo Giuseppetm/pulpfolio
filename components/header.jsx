@@ -1,5 +1,5 @@
 import { themes } from "@/utils/data";
-import styles from './header.module.scss';
+import Image from "next/image";
 
 const Header = () => {
     const onThemeSelect = (updatedTheme) => {
@@ -13,19 +13,28 @@ const Header = () => {
     };
 
     return (
-        <header className={styles.header}>
-            <div className={styles.themesList}>
+        <header className={"header"}>
+            <div className={"themesList"}>
                 {themes.map((t,i) => {
                     return (
                         <div 
                             style={{ backgroundColor: t.bgColor }}
-                            className={styles.theme} 
+                            className={"theme"} 
                             key={i} 
                             onClick={() => onThemeSelect(t.name)} 
-                        />
+                            data-cursor-text={t.label}
+                        >
+                            { t.imgSrc && <Image src={`/images/themes/${t.imgSrc}`} alt={t.name} width={40} height={40} /> }
+                        </div>
                     );
                 })}
             </div>
+
+            <div>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div />
         </header>
     );
 };

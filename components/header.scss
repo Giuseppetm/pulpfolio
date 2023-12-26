@@ -1,0 +1,50 @@
+@import "@/styles/variables.scss";
+@import "@/styles/themes.scss";
+
+.header {
+    position: absolute;
+    top: 54px;
+    left: $padding-left-desktop;
+    right: $padding-right-desktop;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: uppercase;
+
+        @include themify($themes) {
+            color: themed('secondaryTextColor');
+        }
+    }
+}
+
+.themesList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.theme {
+    width: 48px;
+    height: 48px;
+    rotate: -15deg;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    
+    @include themify($themes) {
+        box-shadow: themed('boxShadow');
+        border: 1px solid themed('secondaryTextLightColor');
+    }
+
+    img {
+        rotate: 15deg;
+    }
+}

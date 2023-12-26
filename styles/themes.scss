@@ -4,33 +4,56 @@ $themes: (
         primaryTextColor: #222222,
         secondaryTextColor: #888888,
         secondaryTextLightColor: #B8B8B8,
-        accentColor: #EC4C08
+        accentColor: #EC4C08,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 2px
     ),
     pulpFiction: (
-        backgroundColor: #fcf25d,
-        primaryTextColor: #222222,
-        secondaryTextColor: #888888,
-        secondaryTextLightColor: #B8B8B8,
-        accentColor: #fbb724
+        backgroundColor: #222222,
+        primaryTextColor: #fcf25d,
+        secondaryTextColor: #6b6a6a,
+        secondaryTextLightColor: #484848,
+        accentColor: #f45332,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 2px
     ),
     bladeRunner: (
-        backgroundColor: rgb(13, 20, 163),
+        backgroundColor: rgb(12, 19, 143),
         primaryTextColor: #e9e9e9,
         secondaryTextColor: #c4c4c4,
         secondaryTextLightColor: #c8c8c8,
-        accentColor: #e41f1f
+        accentColor: #e41f1f,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
     ),
     theMatrix: (
-
+        backgroundColor: rgb(33, 33, 33),
+        primaryTextColor: #e9e9e9,
+        secondaryTextColor: #6b6a6a,
+        secondaryTextLightColor: #484848,
+        accentColor: #1fca0f,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
     ),
     2001: (
-
+        backgroundColor: #5FBED4,
+        primaryTextColor: #A4160A,
+        secondaryTextColor: #6b6a6a,
+        secondaryTextLightColor: #484848,
+        accentColor: #2D333F,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
     ),
     tva: (
-
+        backgroundColor: #262828,
+        primaryTextColor: #FF8323,
+        secondaryTextColor: #6b6a6a,
+        secondaryTextLightColor: #484848,
+        accentColor: #FD474F,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
     ),
     her: (
-
+        backgroundColor: #C93825, //#CE4243
+        primaryTextColor: #F0F0F0,
+        secondaryTextColor: #cbcbcb,
+        secondaryTextLightColor: #dcdcdc,
+        accentColor: #222222,
+        boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
     )
 );
 

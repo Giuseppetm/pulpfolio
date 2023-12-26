@@ -1,37 +1,44 @@
 const themes = [
     {
         name: "default",
+        label: "Default theme",
         imgSrc: "",
         bgColor: "#EEEEEE"
     }, 
     {
         name: "pulpFiction",
-        imgSrc: "",
+        label: "Pulp Fiction Theme",
+        imgSrc: "pulpFiction.png",
         bgColor: "#222222"
     },
     {
         name: "bladeRunner",
-        imgSrc: "",
+        label: "Blade Runner Theme",
+        imgSrc: "bladeRunner.png",
         bgColor: "#002265"
     },
     {
         name: "theMatrix",
-        imgSrc: "",
+        label: "The Matrix Theme",
+        imgSrc: "theMatrix.png",
         bgColor: "#222222"
     },
     {
         name: "2001",
-        imgSrc: "",
+        label: "2001 Theme",
+        imgSrc: "2001.png",
         bgColor: "#FAFAFA"
     },
     {
         name: "tva",
-        imgSrc: "",
+        label: "TVA Theme",
+        imgSrc: "tva.png",
         bgColor: "#FAFAFA"
     },
     {
         name: "her",
-        imgSrc: "",
+        label: "Her Theme",
+        imgSrc: "her.png",
         bgColor: "#FE7271"
     }
 ];

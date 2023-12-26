@@ -1,0 +1,21 @@
+@import '@/styles/variables.scss';
+@import '@/styles/themes.scss';
+
+.hero {
+    padding-left: $padding-left-desktop;
+    padding-right: $padding-right-desktop;
+    margin-bottom: 94px;
+
+    .title h1 {
+        font-size: 151px;
+        font-weight: 600;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        font-size: 36px;
+        margin-top: 56px;
+    }
+}
