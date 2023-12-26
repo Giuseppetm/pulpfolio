@@ -85,7 +85,35 @@ const movies = [
     }
 ];
 
+const projects = [
+    {
+        name: "Studenti Unimi",
+        technologies: ['react', 'nextjs', 'typescript'],
+        imgSrc: 'studenti-unimi.png',
+        href: "www.google.it"
+    },
+    {
+        name: "Syndrome Main Computer",
+        technologies: ['react', 'javascript'],
+        imgSrc: 'kronos.png',
+        href: "www.google.it"
+    },
+    {
+        name: "Prometheus Portfolio",
+        technologies: ['react', 'nextjs', 'javascript'],
+        imgSrc: 'prometheus-portfolio.png',
+        href: "www.google.it"
+    },
+    {
+        name: "Pulpfolio",
+        technologies: ['react', 'nextjs', 'javascript'],
+        imgSrc: 'pulpfolio.png',
+        href: "www.google.it"
+    }
+];
+
 export { 
     themes,
-    movies
+    movies,
+    projects
 };

@@ -4,7 +4,7 @@ import ImagesMarquee from "@/components/imagesMarquee";
 const Hero = () => {
     return (
         <section className={"hero"}>
-            <div class="container mx-auto">
+            <div className="container mx-auto">
                 <div className={"title"}>
                     <h1>
                         Giuseppe<div className={"new-line"}/> Del Campo
@@ -14,10 +14,10 @@ const Hero = () => {
 
             <ImagesMarquee />
                 
-            <div class="container mx-auto">
+            <div className="container mx-auto">
                 <div className={"subtitle"}>
-                    <div class="grid grid-cols-12 gap-4">
-                        <div class="col-span-12 xl:col-span-8 description">
+                    <div className="grid grid-cols-12 gap-4">
+                        <div className="col-span-12 xl:col-span-8 description">
                             <p>
                                 <b className={"accent"}>Passionate Frontend Developer</b> at <b>People Lab Srl</b> based in Milan, 
                                 currently working for <b>Protocube Reply</b> on software development for the management of 3D models. 
@@ -28,7 +28,7 @@ const Hero = () => {
                                 Skilled mostly in React and Vue environments with further knowledge in .NET with the latest front-end frameworks both web and mobile.
                             </p>
                         </div>
-                        <div class="col-span-2 col-start-11 work-details-col">
+                        <div className="col-span-2 col-start-11 work-details-col">
                             <div className={"work-details"}>
                                 <p className={"accent"}>Worked for</p>
                                 <p>Blue Reply /</p>
