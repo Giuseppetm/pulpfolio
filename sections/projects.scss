@@ -80,6 +80,7 @@
             }
 
             .name {
+                font-size: clamp(20px, 6vw + 1.5rem, 36px);
                 font-size: 36px;
                 padding-top: 30px;
                 padding-bottom: 30px;
