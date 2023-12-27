@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 import '@/styles/globals.scss';
 import Head from "next/head";
 import fonts from "@/utils/fonts";
@@ -12,9 +12,9 @@ const MyApp = ({ Component, pageProps }) => {
       body.classList.add(`theme-${theme}`);
     } else {
       localStorage.setItem("theme", "default");
-      body.classList.add(`theme-${theme}`);
+      body.classList.add(`theme-${"default"}`);
     }
-  });
+  }, []);
 
   return (
     <>
