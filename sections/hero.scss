@@ -18,15 +18,25 @@
         text-align: center;
         line-height: calc(100px + 1vw);
 
+        @include xxl {
+            font-size: clamp(56px, 6vw + 1.8rem, 156px);
+        }
+
+        @include lg {
+            font-size: clamp(56px, 6vw + 5.1rem, 156px);
+            line-height: calc(146px + 1vw);
+        }
+
         @include sm {
             text-align: left;
-            line-height: calc(60px + 1vw);
+            font-size: clamp(56px, 6vw + 2.3rem, 156px);
+            line-height: calc(64px + 1vw);
         }
 
         .new-line {
             display: none;
 
-            @include xxl {
+            @include lg {
                 display: block;
             }
         }

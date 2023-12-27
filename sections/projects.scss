@@ -13,7 +13,7 @@
     
     h2 {
         font-weight: 600;
-        font-size: 52px;
+        font-size: clamp(34px, 6vw + 1.5rem, 52px);
     }
 
     .projects-table {
@@ -59,18 +59,22 @@
                         text-decoration: themed('accentColor') solid underline;
                         -webkit-text-decoration-skip: ink;
                         text-decoration-skip: ink;
+                        opacity: 0.75;
                     }
                 }
         
                 .arrow-box svg {
                     rotate: -45deg;
+
+                    @include themify($themes) {
+                        color: themed('accentColor');
+                    }
                 }
         
                 .arrow-box .arrow {
                     @include themify($themes) {
-                        background-color: themed('backgroundColor');
-                        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='black' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='16' stroke-linecap='square'/%3e%3c/svg%3e");
-                        border-radius: 100px;
+                        background-color: transparent;
+                        border: 1px dashed themed('primaryTextColor');
                     }
                 }
             }
@@ -82,7 +86,8 @@
 
                 p {
                     display: inline;
-                    transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6);
+                    transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6),
+                                color 0.2s cubic-bezier(.17, .67, .84, .6);
                 }
             }
 
@@ -118,6 +123,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    border: 1px transparent solid;
                     
                     svg {
                         transition: rotate 0.2s cubic-bezier(.17, .67, .84, .6);

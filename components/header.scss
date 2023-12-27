@@ -56,6 +56,7 @@ header {
         .theme {
             $size-desktop: 48px;
             $size-mobile: 32px;
+            opacity: 75%;
             width: $size-desktop;
             height: $size-desktop;
             rotate: -12deg;
@@ -85,6 +86,15 @@ header {
 
             img {
                 rotate: 15deg;
+            }
+        }
+
+        .active {
+            rotate: -2deg;
+
+            @include themify($themes) {
+                opacity: 100%;
+                border: 2px solid themed('accentColor');
             }
         }
     }
