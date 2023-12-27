@@ -25,12 +25,12 @@ const Index = () => {
     <>
       <NextSeo
           title={`Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`}
-          description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer), based on Prometheus Portfolio.`}
+          description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer).`}
           canonical={"https://giuseppedelcampo.netlify.app/"}
           openGraph={{
               url: "https://giuseppedelcampo.netlify.app/",
               title: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
-              description: `Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer), based on Prometheus Portfolio.`,
+              description: `Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer).`,
               site_name: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
               type: 'website',
               locale: "en_US",
