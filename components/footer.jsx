@@ -54,7 +54,7 @@ const Footer = () => {
                             </div>
                             <div>
                                 <p>Technologies used</p>
-                                <p className={"light-accent"}>React, NextJS, GSAP/</p>
+                                <p className={"light-accent"}>React, NextJS, GSAP</p>
                             </div>
                         </div>
                     </div>
