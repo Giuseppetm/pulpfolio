@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { NextSeo } from 'next-seo';
+import { calculateAge } from "@/utils/functions";
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import Hero from "@/sections/hero";
@@ -21,7 +23,30 @@ const Index = () => {
 
   return (
     <>
-      {/* TODO: NextSEO stuff */}
+      <NextSeo
+          title={`Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`}
+          description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer), based on Prometheus Portfolio.`}
+          canonical={"https://giuseppedelcampo.netlify.app/"}
+          openGraph={{
+              url: "https://giuseppedelcampo.netlify.app/",
+              title: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
+              description: `Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer), based on Prometheus Portfolio.`,
+              site_name: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
+              type: 'website',
+              locale: "en_US",
+              images: [
+                  {
+                      url: 'images/preview.png',
+                      type: 'image/png',
+                  }
+              ],
+          }}
+          twitter={{
+              handle: '@handle',
+              site: '@site',
+              cardType: 'summary_large_image',
+          }}
+      />
       <Header />
       <Hero />
       <Projects />

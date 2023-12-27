@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Giuseppe Del Campo" />
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="favicon.jpeg" />
       </Head>
       <main className={fonts.className}>
         <Component {...pageProps} />
