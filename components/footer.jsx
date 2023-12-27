@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="container mx-auto">
-                <div className="grid grid-cols-12 gap-8 gap-y-12">
+                <div className="grid grid-cols-12 md:gap-8 gap-y-12">
 
                     <div className="col-span-12 lg:col-span-5 xl:col-span-4">
                         <div className={"contact"}>
