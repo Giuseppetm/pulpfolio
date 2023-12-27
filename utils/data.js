@@ -90,25 +90,25 @@ const projects = [
         name: "Studenti Unimi",
         technologies: ['react', 'nextjs', 'typescript'],
         imgSrc: 'studenti-unimi.png',
-        href: "www.google.it"
+        href: "https://github.com/StudentiUniMi/website"
     },
     {
         name: "Syndrome Main Computer",
         technologies: ['react', 'javascript'],
         imgSrc: 'kronos.png',
-        href: "www.google.it"
+        href: "https://github.com/Giuseppetm/syndrome-main-computer"
     },
     {
         name: "Prometheus Portfolio",
         technologies: ['react', 'nextjs', 'javascript'],
         imgSrc: 'prometheus-portfolio.png',
-        href: "www.google.it"
+        href: "https://github.com/Giuseppetm/prometheus-portfolio"
     },
     {
         name: "Pulpfolio",
         technologies: ['react', 'nextjs', 'javascript'],
         imgSrc: 'pulpfolio.png',
-        href: "www.google.it"
+        href: "https://github.com/Giuseppetm/pulpfolio"
     }
 ];
 

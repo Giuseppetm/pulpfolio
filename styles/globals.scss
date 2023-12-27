@@ -33,6 +33,20 @@ p {
   font-size: clamp(24px, 5vw, 36px);
 }
 
+a {
+  transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6);
+
+  &:hover {
+    @include themify($themes) {
+      -webkit-text-decoration: themed('accentColor') solid underline;
+      text-decoration: themed('accentColor') solid underline 2px;
+      -webkit-text-decoration-skip: ink;
+      text-decoration-skip: ink;
+      opacity: 0.75;
+    }
+  }
+}
+
 main {
   font-weight: 500;
   min-height: 100vh;

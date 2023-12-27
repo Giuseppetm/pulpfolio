@@ -79,14 +79,17 @@
                 }
             }
 
-            .name {
-                font-size: clamp(20px, 6vw + 1.5rem, 36px);
-                font-size: 36px;
-                padding-top: 30px;
-                padding-bottom: 30px;
+            a {
+                all: unset;
+            }
 
+            .name {
+                
                 p {
-                    display: inline;
+                    font-size: clamp(20px, 6vw + 1.5rem, 36px);
+                    font-size: 36px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
                     transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6),
                                 color 0.2s cubic-bezier(.17, .67, .84, .6);
                 }

@@ -20,17 +20,23 @@ const Projects = () => {
                             return (
                                 <tr className={"project"} key={i} data-cursor-img={`/images/projects/${p.imgSrc}`}>
                                     <td className={"name"}>
-                                        <p>{p.name}</p>
+                                        <a href={p.href}>
+                                            <p>{p.name}</p>
+                                        </a>
                                     </td>
                                     <td>
-                                        <div className={"technologies"}>
-                                            {p.technologies.map((t,i) => (<div className={"technology"} key={i}>{t}</div>))}
-                                        </div>
+                                        <a href={p.href}>
+                                            <div className={"technologies"}>
+                                                {p.technologies.map((t,i) => (<div className={"technology"} key={i}>{t}</div>))}
+                                            </div>
+                                        </a>
                                     </td>
                                     <td className={"arrow-box"}>
-                                        <div className={"arrow"}>
-                                            <FaArrowRight />
-                                        </div>
+                                        <a href={p.href}>
+                                            <div className={"arrow"}>
+                                                <FaArrowRight />
+                                            </div>
+                                        </a>
                                     </td>
                                 </tr>
                             );

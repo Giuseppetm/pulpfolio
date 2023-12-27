@@ -50,7 +50,7 @@ const Footer = () => {
                         <div className={"site-details"}>
                             <div>
                                 <p>Website made by</p>
-                                <p className={"light-accent"}>Giuseppe Del Campo</p>
+                                <p className={"light-accent"}><a href="https://github.com/Giuseppetm">Giuseppe Del Campo</a></p>
                             </div>
                             <div>
                                 <p>Technologies used</p>
