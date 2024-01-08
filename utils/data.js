@@ -40,6 +40,12 @@ const themes = [
         label: "Her Theme",
         imgSrc: "her.png",
         bgColor: "#FE7271"
+    },
+    {
+        name: "tron",
+        label: "Tron Theme",
+        imgSrc: "tron.png",
+        bgColor: "#0A1216"
     }
 ];
 
