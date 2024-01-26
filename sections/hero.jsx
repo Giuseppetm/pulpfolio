@@ -1,30 +1,50 @@
 import Header from "@/components/header";
 import ImagesMarquee from "@/components/imagesMarquee";
+import gsap from "gsap";
+import SplitType from 'split-type'
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
+    useGSAP(() => {
+        gsap.fromTo(
+            new SplitType('.title', { types: 'chars' }).chars,
+            {
+                y: 100,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                stagger: 0.05,
+                duration: 1.5,
+                ease: 'power4.out',
+            }
+        );
+    });
+
     return (
         <section className={"hero"}>
             <div className="container mx-auto">
                 <div className={"title"}>
                     <h1>
-                        Giuseppe<div className={"new-line"}/> Del Campo
+                        Giuseppe<div className={"new-line"} /> Del Campo
                     </h1>
                 </div>
             </div>
 
             <ImagesMarquee />
-                
+
             <div className="container mx-auto">
                 <div className={"subtitle"}>
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 xl:col-span-8 description">
                             <p>
-                                <b className={"accent"}>Passionate Frontend Developer</b> at <b><a href="https://www.peoplelab.it/">People Lab Srl</a></b> based in Milan, 
-                                currently working for <b><a href="https://protocube.it/">Protocube Reply</a></b> on software development for the management of 3D models. 
+                                <b className={"accent"}>Passionate Frontend Developer</b> at <b><a href="https://www.peoplelab.it/">People Lab Srl</a></b> based in Milan,
+                                currently working for <b><a href="https://protocube.it/">Protocube Reply</a></b> on software development for the management of 3D models.
                             </p>
 
                             <p>
-                                Experienced in multiple contexts such as clinical, industrial, and e-commerce related fields. 
+                                Experienced in multiple contexts such as clinical, industrial, and e-commerce related fields.
                                 Skilled mostly in React and Vue environments with further knowledge in .NET with the latest front-end frameworks both web and mobile.
                             </p>
                         </div>

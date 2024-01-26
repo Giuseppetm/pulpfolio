@@ -13,6 +13,7 @@
     }
 
     .title h1 {
+        clip-path: polygon(0 0, 100% 0, 100% 200%, 0% 100%);
         font-size: clamp(56px, 6vw + 2.3rem, 156px);
         font-weight: 600;
         text-align: center;
