@@ -35,6 +35,7 @@ p {
 
 a {
   transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6);
+  transition: opacity 0.2s cubic-bezier(.17, .67, .84, .6);
 
   &:hover {
     @include themify($themes) {

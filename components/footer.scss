@@ -119,6 +119,7 @@ footer {
                 padding: 15px;
                 border-radius: 100%;
                 font-size: 20px;
+                transition: background 0.2s cubic-bezier(.17, .67, .84, .6);
                 
                 @include themify($themes) {
                     border: 1px dashed themed('primaryTextColor');
@@ -126,14 +127,14 @@ footer {
                 }
 
                 &:hover {
+                    @include themify($themes) {
+                        background-color: transparent;
+                    }
+
                     svg {
                         @include themify($themes) {
                             color: themed('accentColor');
                         }
-                    }
-
-                    @include themify($themes) {
-                        background-color: transparent;
                     }
                 }
             }
