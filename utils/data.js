@@ -105,6 +105,12 @@ const projects = [
         href: "https://github.com/Giuseppetm/syndrome-main-computer"
     },
     {
+        name: "Nuxt Sample Webapp",
+        technologies: ['vue', 'nuxtjs', 'typescript'],
+        imgSrc: 'nuxt-sample-webapp.png',
+        href: "https://github.com/Giuseppetm/nuxt-sample-webapp"
+    },
+    {
         name: "Prometheus Portfolio",
         technologies: ['react', 'nextjs', 'javascript'],
         imgSrc: 'prometheus-portfolio.png',
