@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import '@/styles/globals.scss';
 import Head from "next/head";
 import fonts from "@/utils/fonts";
@@ -24,6 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel="icon" href="favicon.jpeg" />
       </Head>
       <main className={fonts.className}>
+        <GoogleAnalytics gaId='G-Y52GX3LQ6P' />
         <Component {...pageProps} />
       </main>
     </>
