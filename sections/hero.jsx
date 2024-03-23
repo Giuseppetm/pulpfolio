@@ -1,6 +1,6 @@
 import ImagesMarquee from "@/components/imagesMarquee";
 import gsap from "gsap";
-import SplitType from 'split-type'
+import SplitType from 'split-type';
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
