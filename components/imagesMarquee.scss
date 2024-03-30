@@ -8,8 +8,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
-    margin-left: -($padding-left-desktop) - 10px;
-    margin-right: -($padding-right-desktop);
+    margin-left: -58px;
+    margin-right: -48px;
     margin-top: $margin-desktop + 20px;
     margin-bottom: $margin-desktop;
 
@@ -19,8 +19,8 @@
     }
 
     @include md {
-        margin-left: -($padding-left-mobile) - 10px;
-        margin-right: -($padding-right-mobile);
+        margin-left: -28px;
+        margin-right: -18px;
     }
 
     .movie {

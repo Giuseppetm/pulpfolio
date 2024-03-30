@@ -1,12 +1,5 @@
 footer {
-    padding-left: $padding-left-desktop;
-    padding-right: $padding-right-desktop;
     padding-bottom: 25px;
-
-    @include md {
-        padding-left: $padding-left-mobile;
-        padding-right: $padding-right-mobile;
-    }
 
     h3 {
         display: inline;

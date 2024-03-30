@@ -7,12 +7,8 @@ header {
     $padding-mobile: 26px;
     padding-top: $padding-desktop;
     padding-bottom: $padding-desktop;
-    padding-left: $padding-left-desktop;
-    padding-right: $padding-right-desktop;
 
     @include sm {
-        padding-left: $padding-left-mobile;
-        padding-right: $padding-right-mobile;
         padding-top: $padding-mobile;
         padding-bottom: $padding-mobile;
     }
@@ -42,19 +38,25 @@ header {
 
     .themes-list {
         $gap-desktop: 24px;
+        $gap-tablet: 18px;
         $gap-mobile: 12px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: $gap-desktop;
         flex-grow: 1;
-
+        
         @include md {
+            gap: $gap-tablet;
+        }
+
+        @include sm {
             gap: $gap-mobile;
         }
 
         .theme {
             $size-desktop: 48px;
+            $size-tablet: 38px;
             $size-mobile: 32px;
             opacity: 75%;
             width: $size-desktop;
@@ -70,6 +72,11 @@ header {
                 opacity 0.2s cubic-bezier(.17, .67, .84, .6);
 
             @include md {
+                width: $size-tablet;
+                height: $size-tablet;
+            }
+
+            @include sm {
                 width: $size-mobile;
                 height: $size-mobile;
             }

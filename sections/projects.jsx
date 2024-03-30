@@ -24,7 +24,7 @@ const Projects = () => {
                                             <p>{p.name}</p>
                                         </a>
                                     </td>
-                                    <td>
+                                    <td className="px-4">
                                         <a href={p.href}>
                                             <div className={"technologies"}>
                                                 {p.technologies.map((t,i) => (<div className={"technology"} key={i}>{t}</div>))}

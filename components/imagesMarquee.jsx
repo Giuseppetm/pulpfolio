@@ -14,7 +14,7 @@ const ImagesMarquee = () => {
                             height="0"
                             sizes="100vw"
                             className="w-full" 
-                            fetchPriority="high"
+                            loading="lazy"
                         />
                     </div>
                 );
