@@ -37,7 +37,7 @@
 
         @include sm {
             text-align: left;
-            font-size: clamp(56px, 9.6vw + 1.8rem, 152px);
+            font-size: clamp(56px, 9vw + 1.8rem, 152px);
         }
 
         .new-line {

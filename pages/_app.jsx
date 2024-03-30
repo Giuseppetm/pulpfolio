@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useGSAP } from "@gsap/react";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Lenis from '@studio-freight/lenis'
 import '@/styles/globals.scss';
 import Head from "next/head";
 import fonts from "@/utils/fonts";
@@ -10,6 +11,15 @@ const MyApp = ({ Component, pageProps }) => {
 
   useGSAP(() => {
     setRender(true);
+
+    const lenis = new Lenis()
+    
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    
+    requestAnimationFrame(raf);
   });
 
   useEffect(() => {
