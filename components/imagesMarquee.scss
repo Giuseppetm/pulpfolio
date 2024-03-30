@@ -9,23 +9,26 @@
     overflow: hidden;
     text-align: center;
     margin-left: -58px;
-    margin-right: -48px;
     margin-top: $margin-desktop + 20px;
     margin-bottom: $margin-desktop;
 
-    @include sm {
-        margin-top: $margin-mobile;
-        margin-bottom: $margin-mobile;
+    @include md {
+        margin-top: $margin-tablet;
+        margin-bottom: $margin-tablet;
     }
 
-    @include md {
-        margin-left: -28px;
-        margin-right: -18px;
+    @include sm {
+        margin-top: 36px;
+        margin-bottom: 36px;
     }
 
     .movie {
         display: inline-block;
         margin-right: 21px;
+
+        @include sm {
+            margin-right: 12px;
+        }
     }
 
     img {

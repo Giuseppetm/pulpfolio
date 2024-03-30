@@ -5,26 +5,39 @@
 .hero {
     margin-bottom: 94px;
 
+    .title {
+        @include sm {
+            margin-top: 12px;
+        }
+    }
+
     .title h1 {
+        display: inline-block;
         clip-path: polygon(0 0, 100% 0, 100% 200%, 0% 100%);
-        font-size: clamp(56px, 6vw + 2.3rem, 156px);
+        font-size: 152px;
         font-weight: 600;
         text-align: center;
-        line-height: calc(100px + 1vw);
+        line-height: 1.2;
 
         @include xxl {
-            font-size: clamp(56px, 6vw + 1.8rem, 156px);
+            font-size: 126px;
+        }
+
+        @include xl {
+            font-size: 99px;
         }
 
         @include lg {
-            font-size: clamp(56px, 6vw + 5.1rem, 156px);
-            line-height: calc(146px + 1vw);
+            font-size: 138px;
+        }
+
+        @include md {
+            font-size: 116px;
         }
 
         @include sm {
             text-align: left;
-            font-size: clamp(56px, 6vw + 2.3rem, 156px);
-            line-height: calc(64px + 1vw);
+            font-size: clamp(56px, 9.6vw + 1.8rem, 152px);
         }
 
         .new-line {
