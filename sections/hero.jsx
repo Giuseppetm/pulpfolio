@@ -50,7 +50,7 @@ const Hero = () => {
                         <div className="col-span-2 col-start-11 work-details-col">
                             <div className={"work-details"}>
                                 <p className={"accent"}>Worked for</p>
-                                <p><a href="https://protocube.it/">Protocube Reply /</a></p>
+                                {/*<p><a href="https://protocube.it/">Protocube Reply /</a></p>*/}
                                 <p><a href="https://whirlpoolcorp.com/">Whirlpool /</a></p>
                                 <p><a href="https://keycrime.com/">Keycrime /</a></p>
                                 <p><a href="https://www.egeatech.com/">Egea Tecnologie Informatiche /</a></p>

@@ -10,8 +10,8 @@ const Projects = () => {
                 <table className="table-auto projects-table">
                     <thead>
                         <tr>
-                            <th><p>Title</p></th>
-                            <th className={"technologies-title"}><p>Technologies</p></th>
+                            <th className={"table-title"}><p>Title</p></th>
+                            <th className={"table-title technologies-title px-4"}><p>Technologies</p></th>
                             <th></th>
                         </tr>
                     </thead>

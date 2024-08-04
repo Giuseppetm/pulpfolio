@@ -33,6 +33,10 @@
                 border-bottom: 2px solid themed('secondaryTextColor');
             }
         }
+        
+        .table-title > p {
+            font-size: 28px !important;
+        }
 
         .technologies-title {
             display: block;
