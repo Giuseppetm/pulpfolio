@@ -46,6 +46,12 @@ const themes = [
         label: "Tron Theme",
         imgSrc: "tron.png",
         bgColor: "#0A1216"
+    },
+    {
+        name: "mrRobot",
+        label: "Mr. Robot",
+        imgSrc: "mrRobot.png",
+        bgColor: "#020202"
     }
 ];
 

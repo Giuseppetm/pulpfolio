@@ -88,7 +88,7 @@ header {
 
             @include themify($themes) {
                 box-shadow: themed('boxShadow');
-                border: 1px solid themed('secondaryTextLightColor');
+                border: 1px solid themed('secondaryTextColor');
             }
 
             img {

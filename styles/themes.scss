@@ -74,10 +74,20 @@ $themes: (
         primaryTextColor: #CDF7FB,
         secondaryTextColor: #cbcbcb,
         secondaryTextLightColor: #dcdcdc,
-        accentColor: #FC741E,
+        accentColor: #FAC322,
         boxShadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
         iconBox: #484848,
         gattaca: #68b8da
+    ),
+    mrRobot: (
+        backgroundColor: #101010,
+        primaryTextColor: #bebebe,
+        secondaryTextColor: #515151,
+        secondaryTextLightColor: #dcdcdc,
+        accentColor: #DB1924,
+        boxShadow: rgba(244, 244, 244, 0.231) 0px 1px 4px,
+        iconBox: #2E2E2E,
+        gattaca: #660000
     )
 );
 
