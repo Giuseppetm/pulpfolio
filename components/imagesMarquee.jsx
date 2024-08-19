@@ -14,7 +14,8 @@ const ImagesMarquee = () => {
                             height="0"
                             sizes="100vw"
                             className="w-full" 
-                            priority={true}
+                            loading="lazy"
+                            placeholder="blur"
                         />
                     </div>
                 );

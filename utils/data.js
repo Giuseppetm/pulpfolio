@@ -49,7 +49,7 @@ const themes = [
     },
     {
         name: "mrRobot",
-        label: "Mr. Robot",
+        label: "Mr. Robot Theme",
         imgSrc: "mrRobot.png",
         bgColor: "#020202"
     }
