@@ -4,6 +4,10 @@
 .projects {
     margin-bottom: 69px;
     
+    p {
+        transition: transform .6s cubic-bezier(0.19,1,0.21,1);
+    }
+    
     h2 {
         font-weight: 600;
         font-size: clamp(34px, 6vw + 1.5rem, 52px);
@@ -57,6 +61,7 @@
                         -webkit-text-decoration-skip: ink;
                         text-decoration-skip: ink;
                         opacity: 0.75;
+                        transform: translateX(20px);
                     }
                 }
         
@@ -88,7 +93,8 @@
                     padding-top: 30px;
                     padding-bottom: 30px;
                     transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6),
-                                color 0.2s cubic-bezier(.17, .67, .84, .6);
+                                color 0.2s cubic-bezier(.17, .67, .84, .6)
+                                transform .6s cubic-bezier(0.19,1,0.22,1);
                 }
             }
 
@@ -127,7 +133,7 @@
                     border: 1px transparent solid;
                     
                     svg {
-                        transition: rotate 0.2s cubic-bezier(.17, .67, .84, .6);
+                        transition: rotate 0.6s cubic-bezier(0.19,1,0.21,1);
                     }
     
                     @include themify($themes) {

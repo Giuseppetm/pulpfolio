@@ -1,5 +1,4 @@
 import { movies } from "@/utils/data";
-import Image from "next/image";
 
 const ImagesMarquee = () => {
     return (
@@ -7,15 +6,10 @@ const ImagesMarquee = () => {
             {movies.map((m,i) => {
                 return (
                     <div className={"movie"} key={i}>
-                        <Image 
+                        <img 
                             src={`/images/movies/${m.imgSrc}`} 
-                            alt={m.imgSrc}    
-                            width="0"
-                            height="0"
-                            sizes="100vw"
+                            alt={m.imgSrc}   
                             className="w-full" 
-                            loading="lazy"
-                            placeholder="blur"
                         />
                     </div>
                 );
