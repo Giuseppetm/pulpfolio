@@ -66,6 +66,9 @@ const movies = [
         imgSrc: "matrix.png"
     },
     {
+        imgSrc: 'theFountain2.png'
+    },
+    {
         imgSrc: "royalTenenbaums.png"
     },
     {

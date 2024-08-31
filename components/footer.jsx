@@ -1,7 +1,4 @@
-import { FaArrowRight } from "react-icons/fa6";
-import { VscGithub } from "react-icons/vsc";
-import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
-import { MdOutlineMail, MdOutlineMovie } from "react-icons/md";
+import { LuArrowUpRight } from "react-icons/lu";
 
 const Footer = () => {
     return (
@@ -9,24 +6,45 @@ const Footer = () => {
             <div className="container mx-auto">
                 <div className="grid grid-cols-12 md:gap-8 gap-y-12">
 
-                    <div className="col-span-12 lg:col-span-5 xl:col-span-4">
-                        <div className={"contact"}>
-                            <h3>Get in touch</h3>
-                            <a href="mailto:giuseppe.delcampo@outlook.com">
-                                <button className={"contact-button"}>
-                                    <p>Send an email</p>
-                                    <div className={"arrow"}>
-                                        <FaArrowRight />
-                                    </div>
-                                </button>
-                            </a>
-                        </div>
+                    <div className="col-span-12 lg:col-span-8 xl:col-span-8 text-center lg:text-start">
+                        <a 
+                            href="mailto:giuseppe.delcampo@outlook.com" 
+                            className={"get-in-touch"}
+                            data-cursor-text={"Let's talk"}
+                        >
+                            Get in touch
+                        </a>
                     </div>
 
-                    <div className="col-span-12 lg:col-span-7 xl:col-span-5">
-                        <div className={"socials"}>
-                            <h3>Reach me on my socials</h3>
-                            <div className={"icons"}>
+                    <div className="col-span-12 lg:col-span-4 xl:col-span-4 lg:mt-4">
+                        <div className="socials items-center lg:items-start">
+                            <a href="https://github.com/Giuseppetm">
+                                <div className='social'>Github <LuArrowUpRight /></div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/giuseppe-del-campo/">
+                                <div className='social'>Linkedin <LuArrowUpRight /></div>
+                            </a>
+                            <a href="https://letterboxd.com/Giuseppetm/">
+                                <div className='social'>Letterboxd <LuArrowUpRight /></div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC48YylNs29E-9-EgA_0noFw">
+                                <div className='social'>Youtube <LuArrowUpRight /></div>
+                            </a>
+                        </div>
+
+                        <div className="credits mt-6 text-center lg:text-start">
+                            <p>Designed and developed by <a href="https://github.com/Giuseppetm">Giuseppe Del Campo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
+
+                            {/* <div className={"icons"}>
                                 <a href="https://letterboxd.com/Giuseppetm/" data-cursor-stick="#stick-icon-1" id="stick-icon-1" title='Letterboxd'>
                                     <MdOutlineMovie />
                                 </a>
@@ -42,27 +60,4 @@ const Footer = () => {
                                 <a href="https://github.com/Giuseppetm" data-cursor-stick="#stick-icon-5" id="stick-icon-5" title='GitHub'>
                                     <VscGithub />
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-span-12 xl:col-span-3">
-                        <div className={"site-details"}>
-                            <div>
-                                <p>Website made by</p>
-                                <p className={"light-accent"}><a href="https://github.com/Giuseppetm">Giuseppe Del Campo</a></p>
-                            </div>
-                            <div>
-                                <p>Technologies used</p>
-                                <p className={"light-accent"}>React, NextJS, GSAP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-    );
-};
-
-export default Footer;
+                            </div> */}
