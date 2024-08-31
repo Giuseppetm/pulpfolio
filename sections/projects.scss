@@ -86,7 +86,6 @@
             }
 
             .name {
-                
                 p {
                     font-size: clamp(20px, 6vw + 1.5rem, 36px);
                     font-size: 36px;
@@ -95,6 +94,19 @@
                     transition: text-decoration 0.2s cubic-bezier(.17, .67, .84, .6),
                                 color 0.2s cubic-bezier(.17, .67, .84, .6)
                                 transform .6s cubic-bezier(0.19,1,0.22,1);
+                }
+
+                .year {
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 500;
+                    top: 0px;
+                    left: 0px;
+                    height: 0px;
+    
+                    @include themify($themes) {
+                        color: themed('accentColor');
+                    }
                 }
             }
 

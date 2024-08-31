@@ -5,7 +5,7 @@ const Projects = () => {
     return (
         <section className={"projects"}>
             <div className="container mx-auto">
-                <h2>Take a look at my projects</h2>
+                <h2>Check out my projects</h2>
 
                 <table className="table-auto projects-table">
                     <thead>
@@ -20,11 +20,14 @@ const Projects = () => {
                             return (
                                 <tr className={"project"} key={i} data-cursor-img={`/images/projects/${p.imgSrc}`}>
                                     <td className={"name"}>
+                                        <div className={"year"}>
+                                            {p.year}
+                                        </div>
                                         <a href={p.href}>
                                             <p>{p.name}</p>
                                         </a>
                                     </td>
-                                    <td className="px-4">
+                                    <td className={"px-4"}>
                                         <a href={p.href}>
                                             <div className={"technologies"}>
                                                 {p.technologies.map((t,i) => (<div className={"technology"} key={i}>{t}</div>))}

@@ -102,31 +102,36 @@ const projects = [
         name: "Studenti Unimi",
         technologies: ['react', 'nextjs', 'typescript'],
         imgSrc: 'studenti-unimi.png',
-        href: "https://github.com/StudentiUniMi/website"
+        href: "https://github.com/StudentiUniMi/website",
+        year: 'Since 2020'
     },
     {
         name: "Syndrome Main Computer",
         technologies: ['react', 'javascript'],
         imgSrc: 'kronos.png',
-        href: "https://github.com/Giuseppetm/syndrome-main-computer"
+        href: "https://github.com/Giuseppetm/syndrome-main-computer",
+        year: '2022'
     },
     {
         name: "Nuxt Sample Webapp",
         technologies: ['vue', 'nuxtjs', 'typescript'],
         imgSrc: 'nuxt-sample-webapp.png',
-        href: "https://github.com/Giuseppetm/nuxt-sample-webapp"
+        href: "https://github.com/Giuseppetm/nuxt-sample-webapp",
+        year: '2024'
     },
     {
         name: "Prometheus Portfolio",
         technologies: ['react', 'nextjs', 'javascript'],
         imgSrc: 'prometheus-portfolio.png',
-        href: "https://github.com/Giuseppetm/prometheus-portfolio"
+        href: "https://github.com/Giuseppetm/prometheus-portfolio",
+        year: '2022'
     },
     {
         name: "Pulpfolio",
         technologies: ['react', 'nextjs', 'javascript'],
         imgSrc: 'pulpfolio.png',
-        href: "https://github.com/Giuseppetm/pulpfolio"
+        href: "https://github.com/Giuseppetm/pulpfolio",
+        year: '2024'
     }
 ];
 
