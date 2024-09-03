@@ -39,7 +39,7 @@ const Hero = () => {
                         <div className="col-span-12 xl:col-span-8 description">
                             <p>
                                 <b className={"accent"}>Passionate Frontend Developer</b> at <b><a href="https://www.deloittedigital.com/it/en.html">Deloitte Digital</a></b> based in Milan,
-                                currently focused on e-commerce contexts.
+                                currently focused on e-commerce projects.
                             </p>
 
                             <p>
