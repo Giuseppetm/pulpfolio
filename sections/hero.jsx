@@ -38,16 +38,17 @@ const Hero = () => {
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 xl:col-span-8 description">
                             <p>
-                                <b className={"accent"}>Passionate Frontend Developer</b> at <b><a href="https://www.deloittedigital.com/it/en.html">Deloitte Digital</a></b> based in Milan,
-                                currently focused on e-commerce projects.
+                                <b className={"accent"}>Passionate Frontend Developer</b> based in Milan currently working at <b><a href="https://www.deloittedigital.com/it/en.html">Deloitte Digital</a></b> as consultant,
+                                focused on e-commerce projects.
                             </p>
 
                             <p>
-                                Experienced in multiple contexts such as clinical, industrial, and e-commerce related fields.
-                                Skilled mostly in React and Vue environments with further knowledge in .NET with the latest front-end frameworks both web and mobile.
+                                Experienced in multiple contexts including clinical, industrial and e-commerce, both in consulting and internal.
+                                Skilled mostly in React and Vue environments with strong focus on writing robust, performant and most of all maintanable code.
                             </p>
                         </div>
-                        <div className="col-span-2 col-start-11 work-details-col">
+                        
+                        <div className="2xl:col-span-2 2xl:col-start-11 col-span-3 col-start-10 work-details-col">
                             <div className={"work-details"}>
                                 <p className={"accent"}>Worked for</p>
                                 <p><a href="https://www.peoplelab.it/">People Lab /</a></p>
