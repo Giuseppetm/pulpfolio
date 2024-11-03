@@ -30,12 +30,6 @@ const themes = [
         bgColor: "#FAFAFA"
     },
     {
-        name: "tva",
-        label: "TVA Theme",
-        imgSrc: "tva.png",
-        bgColor: "#FAFAFA"
-    },
-    {
         name: "her",
         label: "Her Theme",
         imgSrc: "her.png",

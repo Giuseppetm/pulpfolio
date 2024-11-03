@@ -39,7 +39,7 @@ const Hero = () => {
                         <div className="col-span-12 xl:col-span-8 description">
                             <p>
                                 <b className={"accent"}>Passionate Frontend Developer</b> based in Milan currently working at <b><a href="https://www.deloittedigital.com/it/en.html">Deloitte Digital</a></b> as consultant,
-                                focused on e-commerce projects.
+                                focused on <a href="https://www.calzedonia.com/it/">Calzedonia</a> e-commerce projects.
                             </p>
 
                             <p>
@@ -51,12 +51,11 @@ const Hero = () => {
                         <div className="2xl:col-span-2 2xl:col-start-11 col-span-3 col-start-10 work-details-col">
                             <div className={"work-details"}>
                                 <p className={"accent"}>Worked for</p>
-                                <p><a href="https://www.peoplelab.it/">People Lab /</a></p>
-                                <p><a href="https://protocube.it/">Protocube Reply /</a></p>
-                                <p><a href="https://whirlpoolcorp.com/">Whirlpool /</a></p>
-                                <p><a href="https://keycrime.com/">Keycrime /</a></p>
-                                <p><a href="https://www.egeatech.com/">Egea Tecnologie Informatiche /</a></p>
-                                <p><a href="https://sesar.di.unimi.it/">Sesar Lab at UniMi /</a></p>
+                                <p><a href="https://www.peoplelab.it/">People Lab --</a></p>
+                                <p><a href="https://protocube.it/">Protocube Reply --</a></p>
+                                <p><a href="https://whirlpoolcorp.com/">Whirlpool --</a></p>
+                                <p><a href="https://www.egeatech.com/">Egea Tecnologie Informatiche --</a></p>
+                                <p><a href="https://sesar.di.unimi.it/">Sesar Lab at UniMi --</a></p>
                             </div>
                         </div>
                     </div>
