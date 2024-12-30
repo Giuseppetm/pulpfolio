@@ -24,13 +24,14 @@ const Index = () => {
   return (
     <>
       <NextSeo
-          title={`Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`}
-          description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer).`}
+          title={`Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Front-end Developer`}
+          description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Front-end Developer).`}
           canonical={"https://giuseppedelcampo.netlify.app/"}
           openGraph={{
               url: "https://giuseppedelcampo.netlify.app/",
               title: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
-              description: `Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Frontend Developer).`,
+              description: `Passionate Front-end Developer based in Milan currently working at Deloitte Digital as consultant, focused on Calzedonia e-commerce projects.
+                Experienced in multiple contexts including clinical, industrial and e-commerce, both in consulting and internal. Skilled mostly in React and Vue environments with strong focus on writing robust, performant and most of all maintanable code.`,
               site_name: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
               type: 'website',
               locale: "en_US",

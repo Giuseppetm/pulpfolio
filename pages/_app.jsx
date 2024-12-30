@@ -7,11 +7,7 @@ import Head from "next/head";
 import fonts from "@/utils/fonts";
 
 const MyApp = ({ Component, pageProps }) => {
-  const [render, setRender] = useState(false);
-
   useGSAP(() => {
-    setRender(true);
-
     const lenis = new Lenis()
     
     const raf = (time) => {
@@ -40,10 +36,10 @@ const MyApp = ({ Component, pageProps }) => {
         <meta name="author" content="Giuseppe Del Campo" />
         <link rel="icon" href="favicon.jpeg" />
       </Head>
-      { render && <main className={fonts.className}>
+      <main className={fonts.className}>
         <GoogleAnalytics gaId='G-Y52GX3LQ6P' />
         <Component {...pageProps} />
-      </main> }
+      </main>
     </>
   );
 };

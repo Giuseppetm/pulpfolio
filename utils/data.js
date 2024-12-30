@@ -1,10 +1,25 @@
+/**
+ * Companies displayed in the hero section as work experience.
+ */
+const companies = [
+    { name: "People Lab", href: "https://www.peoplelab.it/" }, 
+    { name: "Protocube Reply", href: "https://protocube.it/" }, 
+    { name: "Whirlpool", href: "https://whirlpoolcorp.com/" }, 
+    { name: "Egea Tecnologie Informatiche", href: "https://www.egeatech.com/" }, 
+    { name: "Sesar Lab at UniMi", href: "https://sesar.di.unimi.it/"}
+];
+
+/**
+ * Themes displayed in the header.
+ * There must be a correspondence with `themes.scss` content to work properly.
+ */
 const themes = [
     {
         name: "default",
         label: "Default theme",
         imgSrc: "",
         bgColor: "#EEEEEE"
-    }, 
+    },
     {
         name: "pulpFiction",
         label: "Pulp Fiction Theme",
@@ -49,6 +64,10 @@ const themes = [
     }
 ];
 
+/**
+ * Images to show in the first marquee.
+ * Be sure to include the files in `images/movies` folder.
+ */
 const movies = [
     {
         imgSrc: "gattaca.png"
@@ -94,6 +113,9 @@ const movies = [
     }
 ];
 
+/**
+ * Projects to show in the relative table.
+ */
 const projects = [
     {
         name: "Studenti Unimi",
@@ -132,7 +154,8 @@ const projects = [
     }
 ];
 
-export { 
+export {
+    companies,
     themes,
     movies,
     projects
