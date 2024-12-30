@@ -1,3 +1,4 @@
+import React from 'react'
 import { LuArrowUpRight } from 'react-icons/lu'
 
 const Footer = () => {

@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useEffect } from 'react'
 import { useGSAP } from '@gsap/react'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Lenis from '@studio-freight/lenis'
@@ -42,6 +44,11 @@ const MyApp = ({ Component, pageProps }) => {
 			</main>
 		</>
 	)
+}
+
+MyApp.propTypes = {
+	Component: PropTypes.func.isRequired,
+	pageProps: PropTypes.object.isRequired,
 }
 
 export default MyApp

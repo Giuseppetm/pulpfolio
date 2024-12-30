@@ -1,3 +1,4 @@
+import React from 'react'
 import { movies } from '@/utils/data'
 import Marquee from 'react-fast-marquee'
 

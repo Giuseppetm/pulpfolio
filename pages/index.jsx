@@ -1,6 +1,7 @@
+import React from 'react'
 import { useEffect } from 'react'
 import { NextSeo } from 'next-seo'
-import { calculateAge } from '@/utils/functions'
+import { description, siteName, title } from '@/utils/metadata'
 import MouseFollower from 'mouse-follower'
 import gsap from 'gsap'
 import Hero from '@/sections/hero'
@@ -24,15 +25,14 @@ const Index = () => {
 	return (
 		<>
 			<NextSeo
-				title={`Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Front-end Developer`}
-				description={`Personal website of Giuseppe Del Campo (${calculateAge('10-11-1999')} Years Old Front-end Developer).`}
-				canonical={'https://giuseppedelcampo.netlify.app/'}
+				title={title}
+				description={description}
+				canonical={siteName}
 				openGraph={{
-					url: 'https://giuseppedelcampo.netlify.app/',
-					title: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
-					description: `Passionate Front-end Developer based in Milan currently working at Deloitte Digital as consultant, focused on Calzedonia e-commerce projects.
-                Experienced in multiple contexts including clinical, industrial and e-commerce, both in consulting and internal. Skilled mostly in React and Vue environments with strong focus on writing robust, performant and most of all maintanable code.`,
-					site_name: `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Frontend Developer`,
+					url: siteName,
+					title: title,
+					description: description,
+					site_name: title,
 					type: 'website',
 					locale: 'en_US',
 					images: [
