@@ -1,3 +1,4 @@
+import React from 'react'
 import ImagesMarquee from '@/components/imagesMarquee'
 import gsap from 'gsap'
 import SplitType from 'split-type'
@@ -40,11 +41,14 @@ const Hero = () => {
 					<div className="grid grid-cols-12 gap-4">
 						<div className="col-span-12 xl:col-span-8 description">
 							<p>
-								<b className={'accent'}>Passionate Frontend Developer</b> based in Milan currently working at{' '}
+								<b className={'accent'}>Passionate Frontend Engineer</b> based in Milan currently working at{' '}
 								<b>
 									<a href="https://www.deloittedigital.com/it/en.html">Deloitte Digital</a>
 								</b>{' '}
-								as consultant, focused on <a href="https://www.calzedonia.com/it/">Calzedonia</a> e-commerce projects.
+								as consultant, focused on e-commerce projects such as{' '}
+								<b>
+									<a href="https://www.calzedonia.com/it/">Calzedonia</a>.
+								</b>
 							</p>
 
 							<p>
