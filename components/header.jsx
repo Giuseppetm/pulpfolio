@@ -47,7 +47,7 @@ const Header = () => {
 				</div>
 
 				<div>
-					<p>Frontend Developer</p>
+					<p>Frontend Engineer</p>
 				</div>
 			</div>
 		</header>

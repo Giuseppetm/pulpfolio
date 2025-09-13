@@ -3,10 +3,19 @@
  */
 const companies = [
 	{ name: 'People Lab', href: 'https://www.peoplelab.it/' },
-	{ name: 'Protocube Reply', href: 'https://protocube.it/' },
-	{ name: 'Whirlpool', href: 'https://whirlpoolcorp.com/' },
 	{ name: 'Egea Tecnologie Informatiche', href: 'https://www.egeatech.com/' },
 	{ name: 'Sesar Lab at UniMi', href: 'https://sesar.di.unimi.it/' },
+]
+
+/**
+ * Work Projects displayed in the hero section.
+ */
+const workProjects = [
+	{ name: 'Dolce & Gabbana', href: 'https://www.dolcegabbana.com/it-it/' },
+	{ name: 'Brunello Cucinelli', href: 'https://shop.brunellocucinelli.com/it-it/' },
+	{ name: 'Calzedonia', href: 'https://www.calzedonia.com/it/' },
+	{ name: 'Whirlpool', href: 'https://www.whirlpool.it/' },
+	{ name: 'Smart Bear', href: 'https://cordis.europa.eu/project/id/857172' },
 ]
 
 /**
@@ -119,39 +128,32 @@ const movies = [
 const projects = [
 	{
 		name: 'Studenti Unimi',
-		technologies: ['react', 'nextjs', 'typescript'],
+		technologies: ['next', 'react', 'typescript'],
 		imgSrc: 'studenti-unimi.png',
 		href: 'https://github.com/StudentiUniMi/website',
 		year: 'Since 2020',
 	},
 	{
 		name: 'Syndrome Main Computer',
-		technologies: ['react', 'javascript'],
+		technologies: ['next', 'react', 'typescript'],
 		imgSrc: 'kronos.png',
 		href: 'https://github.com/Giuseppetm/syndrome-main-computer',
-		year: '2022',
-	},
-	{
-		name: 'Nuxt Sample Webapp',
-		technologies: ['vue', 'nuxtjs', 'typescript'],
-		imgSrc: 'nuxt-sample-webapp.png',
-		href: 'https://github.com/Giuseppetm/nuxt-sample-webapp',
-		year: '2024',
-	},
-	{
-		name: 'Prometheus Portfolio',
-		technologies: ['react', 'nextjs', 'javascript'],
-		imgSrc: 'prometheus-portfolio.png',
-		href: 'https://github.com/Giuseppetm/prometheus-portfolio',
-		year: '2022',
+		year: 'Since 2022',
 	},
 	{
 		name: 'Pulpfolio',
-		technologies: ['react', 'nextjs', 'javascript'],
+		technologies: ['next', 'react', 'javascript'],
 		imgSrc: 'pulpfolio.png',
 		href: 'https://github.com/Giuseppetm/pulpfolio',
 		year: '2024',
 	},
+	{
+		name: 'Automated Greenhouse',
+		technologies: ['arduino', 'c++'],
+		imgSrc: 'automated-greenhouse.png',
+		href: 'https://github.com/Giuseppetm/automated-greenhouse',
+		year: '2018',
+	},
 ]
 
-export { companies, themes, movies, projects }
+export { companies, themes, movies, projects, workProjects }
