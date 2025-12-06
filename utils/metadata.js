@@ -8,7 +8,6 @@ const siteName = `https://giuseppedelcampo.netlify.app/`
 
 const title = `Giuseppe Del Campo | ${calculateAge('10-11-1999')} Years Old Front-end Engineer`
 
-const description = `Passionate Front-end Engineer based in Milan currently working at Deloitte Digital as consultant, focused on Calzedonia e-commerce projects.
-                Experienced in multiple contexts including clinical, industrial and e-commerce, both in consulting and internal. Skilled mostly in React and Vue environments with strong focus on writing robust, performant and most of all maintanable code.`
+const description = `Passionate Front-end Engineer based in Milan currently working at Deloitte Digital as consultant, focused on high-impact e-commerce initiatives for leading fashion brands.`
 
 export { siteName, title, description }

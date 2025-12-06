@@ -1,5 +1,5 @@
 import React from 'react'
-import ImagesMarquee from '@/components/imagesMarquee'
+import ImagesMarquee from '@/components/marquee/images/imagesMarquee'
 import gsap from 'gsap'
 import SplitType from 'split-type'
 import { useGSAP } from '@gsap/react'
@@ -55,14 +55,17 @@ const Hero = () => {
 								<a href="https://github.com/StudentiUniMi" target="_blank" rel="noreferrer">
 									<b>StudentiUniMi</b>
 								</a>
-								, an officially recognized university platform that connects over 25,000 students across all degree
-								programs.
+								, an officially recognized university platform that connects over 25,000 students from University of Milan
+								across all degree programs.
 							</p>
 
 							<p>
-								Experienced across clinical, industrial, and e-commerce domains, with a background in both consulting and
-								product-driven environments. Specialized in React and Vue, with a strong focus on server-side rendering and
-								performance optimization to deliver scalable, maintainable solutions.
+								Creator of{' '}
+								<a href="https://github.com/Giuseppetm/syndrome-main-computer" target="_blank" rel="noreferrer">
+									<b>Syndrome Main Computer</b>
+								</a>
+								, a project acclaimed worldwide for its faithful recreation from &quot;The Incredibles&quot; movie, which
+								has garnered millions of views and inspired fans across the globe.
 							</p>
 						</div>
 

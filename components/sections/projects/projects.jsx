@@ -1,3 +1,4 @@
+import React from 'react'
 import { projects } from '@/utils/data'
 import { FaArrowRight } from 'react-icons/fa6'
 

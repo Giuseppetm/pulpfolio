@@ -4,7 +4,7 @@
 const companies = [
 	{ name: 'People Lab', href: 'https://www.peoplelab.it/' },
 	{ name: 'Egea Tecnologie Informatiche', href: 'https://www.egeatech.com/' },
-	{ name: 'Sesar Lab at UniMi', href: 'https://sesar.di.unimi.it/' },
+	{ name: 'Sesar Lab @ UniMi', href: 'https://sesar.di.unimi.it/' },
 ]
 
 /**
@@ -142,7 +142,7 @@ const projects = [
 	},
 	{
 		name: 'Pulpfolio',
-		technologies: ['next', 'react', 'javascript'],
+		technologies: ['next', 'react'],
 		imgSrc: 'pulpfolio.png',
 		href: 'https://github.com/Giuseppetm/pulpfolio',
 		year: '2024',

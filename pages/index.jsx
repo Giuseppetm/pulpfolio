@@ -4,18 +4,17 @@ import { NextSeo } from 'next-seo'
 import { description, siteName, title } from '@/utils/metadata'
 import MouseFollower from 'mouse-follower'
 import gsap from 'gsap'
-import Hero from '@/sections/hero'
-import Projects from '@/sections/projects'
-import GattacaMarquee from '@/components/gattacaMarquee'
-import Footer from '@/components/footer'
-import Header from '@/components/header'
+import Hero from '@/components/sections/hero/hero'
+import Projects from '@/components/sections/projects/projects'
+import GattacaMarquee from '@/components/marquee/gattaca/gattacaMarquee'
+import Footer from '@/components/footer/footer'
+import Header from '@/components/header/header'
 
 MouseFollower.registerGSAP(gsap)
 
 const Index = () => {
 	useEffect(() => {
-		// eslint-disable-next-line no-unused-vars
-		const cursor = new MouseFollower({
+		new MouseFollower({
 			stateDetection: {
 				'-pointer': 'a, button, .theme, .project',
 			},

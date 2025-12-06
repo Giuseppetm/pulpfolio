@@ -39,13 +39,26 @@ footer {
 		}
 	}
 
-	.credits p {
-		font-size: 18px;
+	.credits {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 
+		@include lg {
+			justify-content: center;
+		}
+
+		p,
 		a {
-			@include themify($themes) {
-				color: themed('accentColor');
-			}
+			font-size: 18px;
+		}
+	}
+
+	.credits a {
+		display: block;
+		@include themify($themes) {
+			color: themed('accentColor');
 		}
 	}
 
