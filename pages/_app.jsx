@@ -16,10 +16,6 @@ const preloadImages = [
 	...movies.map((s) => `/images/movies/${s.imgSrc}`),
 ]
 
-if (typeof window !== 'undefined') {
-	document.body.style.opacity = 0
-}
-
 const MyApp = ({ Component, pageProps }) => {
 	useGSAP(() => {
 		const lenis = new Lenis()
