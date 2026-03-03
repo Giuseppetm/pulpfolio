@@ -41,7 +41,7 @@ const Hero = () => {
 					<div className="grid grid-cols-12 gap-4">
 						<div className="col-span-12 xl:col-span-8 description">
 							<p>
-								<b className={'accent'}>Passionate Frontend Engineer</b> based in Milan currently working at{' '}
+								<b className={'accent'}>Passionate Frontend Engineer</b> based in Italy currently working at{' '}
 								<b>
 									<a href="https://www.deloittedigital.com/it/en.html" target="_blank" rel="noreferrer">
 										Deloitte Digital
