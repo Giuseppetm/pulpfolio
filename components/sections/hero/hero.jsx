@@ -79,16 +79,6 @@ const Hero = () => {
 									</p>
 								))}
 							</div>
-
-							<div className={'work-details mt-16'}>
-								<p className={'accent'}>Work Projects</p>
-								{workProjects.map((company, index) => (
-									<p key={index}>
-										{' '}
-										{`--//`} <a href={company.href}>{company.name} </a>
-									</p>
-								))}
-							</div>
 						</div>
 					</div>
 				</div>
